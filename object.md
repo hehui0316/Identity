@@ -97,4 +97,43 @@ Curl:
 curl -X GET --header 'Accept: application/json' 
 
 'http://localhost:3000/api/queries/selectResource'
+
+GET Response:按照productName升序排列
+
+[
+  {
+    "$class": "org.hyperledger.composer.Resource",
+    "productName": "123",
+    "password": "231",
+    "descriptions": "312",
+    "format": "45",
+    "copyright": "4",
+    "keyword": "6",
+    "contentType": "6",
+    "values": "6",
+    "size": "6",
+    "provider": "6",
+    "authorized": []
+  },
+  {
+    "$class": "org.hyperledger.composer.Resource",
+    "productName": "1234",
+    "password": "1234"
+  },
+  {
+    "$class": "org.hyperledger.composer.Resource",
+    "productName": "7562",
+    "password": "",
+    "descriptions": "",
+    "format": "",
+    "copyright": "",
+    "keyword": "",
+    "contentType": "",
+    "values": "",
+    "size": "",
+    "provider": "",
+    "transactionId": "",
+    "authorized": []
+  }
+]
 ```
