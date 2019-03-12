@@ -3,9 +3,11 @@
 用户标识符 email:test@qq.com
 ```
 Curl:
+
 curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' -d '
 
 POST Jason Parameters：
+
 { 
    "$class": "org.hyperledger.composer.RegisterM", 
    "email": "string", 
@@ -21,7 +23,12 @@ POST Jason Parameters：
  ## 1.2添加信息
  用户标识符 email:test@qq.com
  ```
+ Curl:
+ 
  curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' -d 
+ 
+ POST Jason Parameters：
+ 
  { 
    "$class": "org.hyperledger.composer.Member", 
    "email": "string",
@@ -43,7 +50,11 @@ POST Jason Parameters：
  ## 1.3更改信息
   用户标识符 email:test@qq.com
   ```
+  Curl:
+  
  curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' -d 
+ 
+ POST Jason Parameters：
  { 
    "$class": "org.hyperledger.composer.Update", 
    "email": "string", 
@@ -68,9 +79,10 @@ POST Jason Parameters：
  ## 1.4删除信息
  
  输入删除用户email
-  ## 1.3更改信息
-   用户标识符 email:test@qq.com
+ 
   ```
+  Curl:
+  
  curl -X DELETE --header 'Accept: application/json
 
  'http://localhost:3000/api/Member/string'
@@ -81,6 +93,8 @@ POST Jason Parameters：
 
  使用Query进行查询，请求url为
    ```
+   Curl:
+   
  curl -X GET --header 'Accept: application/json
    
  'http://localhost:3000/api/queries/selectMembers'
@@ -89,7 +103,11 @@ POST Jason Parameters：
 # 机构用户
 ## 2.1注册
   ```
+  Curl:
+  
 curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' -d 
+
+POST Jason Parameters：
 { 
    "$class": "org.hyperledger.composer.RegisterS", 
    "registrationNumber": "string",  
@@ -105,7 +123,12 @@ curl -X POST --header 'Content-Type: application/json' --header 'Accept: applica
 
 ## 2.2添加信息
   ```
-curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' -d '{ \ 
+  Curl:
+  
+curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' -d 
+
+POST Jason Parameters：
+{ 
    "$class": "org.hyperledger.composer.Seller",
    "registrationNumber": "string1", 
    "username": "string", 
@@ -133,7 +156,12 @@ curl -X POST --header 'Content-Type: application/json' --header 'Accept: applica
  
 ## 2.3更改信息
   ```
-curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' -d '{ \ 
+  Curl:
+  
+curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' -d 
+
+POST Jason Parameters：
+{ 
    "$class": "org.hyperledger.composer.UpdateSeller", 
     "registrationNumber": "string1", 
    "password": "string", 
@@ -164,6 +192,8 @@ curl -X POST --header 'Content-Type: application/json' --header 'Accept: applica
  
 ## 2.5删除信息
   ```
+  Curl:
+  
 curl -X DELETE --header 'Accept: application/json' 
 
 'http://localhost:3000/api/Seller/string'
@@ -171,6 +201,7 @@ curl -X DELETE --header 'Accept: application/json'
   
 ## 2.6查询信息
   ```
+  Curl:
 curl -X GET --header 'Accept: application/json' 
 
 'http://localhost:3000/api/queries/selectSellers'
