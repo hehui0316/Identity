@@ -35,7 +35,7 @@ POST Jason Parameters：
    "address": "string",  
    "disputeRecord": "string",  
    "authorized": [] 
- }' 
+ }
  
  'http://localhost:3000/api/Member'
  ```
@@ -43,23 +43,24 @@ POST Jason Parameters：
  ## 1.3更改信息
   用户标识符 email:test@qq.com
   ```
- curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' -d '{ \ 
-   "$class": "org.hyperledger.composer.Update", \ 
-   "email": "string", \ 
-   "password": "string", \ 
-   "qq": "string", \ 
-   "identityCard": "string", \ 
-   "username": "string", \ 
-   "buyerType": "string", \ 
-   "Fingerprint": "string", \ 
-   "Iris": "string", \ 
-   "age": "string", \ 
-   "sexual": "string", \ 
-   "educationLevel": "string", \ 
-   "address": "string", \ 
-   "disputeRecord": "string", \ 
-   "authorized": [] \ 
- }' 
+ curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' -d 
+ { 
+   "$class": "org.hyperledger.composer.Update", 
+   "email": "string", 
+   "password": "string", 
+   "qq": "string", 
+   "identityCard": "string",  
+   "username": "string",
+   "buyerType": "string",  
+   "Fingerprint": "string",  
+   "Iris": "string",  
+   "age": "string",  
+   "sexual": "string",  
+   "educationLevel": "string", 
+   "address": "string",  
+   "disputeRecord": "string", 
+   "authorized": []
+ }
  
  'http://localhost:3000/api/Update'
   ```
@@ -70,7 +71,7 @@ POST Jason Parameters：
   ## 1.3更改信息
    用户标识符 email:test@qq.com
   ```
- curl -X DELETE --header 'Accept: application/json' 
+ curl -X DELETE --header 'Accept: application/json
 
  'http://localhost:3000/api/Member/string'
   ```
@@ -80,7 +81,7 @@ POST Jason Parameters：
 
  使用Query进行查询，请求url为
    ```
- curl -X GET --header 'Accept: application/json' 
+ curl -X GET --header 'Accept: application/json
    
  'http://localhost:3000/api/queries/selectMembers'
    ```
@@ -88,15 +89,16 @@ POST Jason Parameters：
 # 机构用户
 ## 2.1注册
   ```
-curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' -d '{ \ 
-   "$class": "org.hyperledger.composer.RegisterS", \ 
-   "registrationNumber": "string", \ 
-   "password": "string", \ 
-   "Fingerprint": "string", \ 
-   "Iris": "string", \ 
-   "transactionId": "", \ 
-   "timestamp": "2019-03-12T06:45:49.852Z" \ 
- }' 
+curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' -d 
+{ 
+   "$class": "org.hyperledger.composer.RegisterS", 
+   "registrationNumber": "string",  
+   "password": "string",
+   "Fingerprint": "string", 
+   "Iris": "string", 
+   "transactionId": "", 
+   "timestamp": "2019-03-12T06:45:49.852Z" 
+ }
 
  'http://localhost:3000/api/RegisterS'
    ```
@@ -104,26 +106,26 @@ curl -X POST --header 'Content-Type: application/json' --header 'Accept: applica
 ## 2.2添加信息
   ```
 curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' -d '{ \ 
-   "$class": "org.hyperledger.composer.Seller", \ 
-   "registrationNumber": "string1", \ 
-   "username": "string", \ 
-   "address": "string", \ 
-   "bussinessScope": "string", \ 
-   "yycode": "string", \ 
-   "legalRepresentative": "string", \ 
-   "bankAddress": "string", \ 
-   "type": "string", \ 
-   "time": "string", \ 
-   "bussinessTerm": "string", \ 
-   "userType": "string", \ 
-   "email": "string", \ 
-   "qq": "string", \ 
-   "identityCard": "string", \ 
-   "representativeName": "string", \ 
-   "age": "string", \ 
-   "sexual": "string", \ 
-   "educationLevel": "string", \ 
-   "authorized": [] \ 
+   "$class": "org.hyperledger.composer.Seller",
+   "registrationNumber": "string1", 
+   "username": "string", 
+   "address": "string", 
+   "bussinessScope": "string",  
+   "yycode": "string",  
+   "legalRepresentative": "string", 
+   "bankAddress": "string",  
+   "type": "string",  
+   "time": "string",  
+   "bussinessTerm": "string",  
+   "userType": "string",  
+   "email": "string",  
+   "qq": "string", 
+   "identityCard": "string", 
+   "representativeName": "string", 
+   "age": "string", 
+   "sexual": "string",  
+   "educationLevel": "string", 
+   "authorized": [] 
  }'
  
  'http://localhost:3000/api/Seller'
@@ -132,29 +134,29 @@ curl -X POST --header 'Content-Type: application/json' --header 'Accept: applica
 ## 2.3更改信息
   ```
 curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' -d '{ \ 
-   "$class": "org.hyperledger.composer.UpdateSeller", \ 
-    "registrationNumber": "string1", \ 
-   "password": "string", \ 
-   "username": "string", \ 
-   "address": "string", \ 
-   "bussinessScope": "string", \ 
-   "yycode": "string", \ 
-   "legalRepresentative": "string", \ 
-   "bankAddress": "string", \ 
-   "type": "string", \ 
-   "time": "string", \ 
-   "bussinessTerm": "string", \ 
-   "userType": "string", \ 
-   "email": "string", \ 
-   "qq": "string", \ 
-   "identityCard": "string", \ 
-   "representativeName": "string", \ 
-   "Fingerprint": "string", \ 
-   "Iris": "string", \ 
-   "age": "string", \ 
-   "sexual": "string", \ 
-   "educationLevel": "string", \ 
-   "authorized": [] \ 
+   "$class": "org.hyperledger.composer.UpdateSeller", 
+    "registrationNumber": "string1", 
+   "password": "string", 
+   "username": "string", 
+   "address": "string",  
+   "bussinessScope": "string",  
+   "yycode": "string", 
+   "legalRepresentative": "string", 
+   "bankAddress": "string",  
+   "type": "string", 
+   "time": "string",  
+   "bussinessTerm": "string",  
+   "userType": "string", 
+   "email": "string", 
+   "qq": "string", 
+   "identityCard": "string",  
+   "representativeName": "string",  
+   "Fingerprint": "string",  
+   "Iris": "string", 
+   "age": "string", 
+   "sexual": "string", 
+   "educationLevel": "string", 
+   "authorized": [] 
  }'
  
  'http://localhost:3000/api/UpdateSeller'
