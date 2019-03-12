@@ -39,6 +39,7 @@ POST Jason Parameters：
  ```
  
  ## 1.3更改信息
+  用户标识符 email:test@qq.com
   ```
  curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' -d '{ \ 
    "$class": "org.hyperledger.composer.Update", \ 
@@ -64,6 +65,7 @@ POST Jason Parameters：
  
  输入删除用户email
   ## 1.3更改信息
+   用户标识符 email:test@qq.com
   ```
  curl -X DELETE --header 'Accept: application/json' 
  'http://localhost:3000/api/Member/string'
