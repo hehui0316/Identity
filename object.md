@@ -1,6 +1,9 @@
 ## 1.1注册
 
+用户标识符 productName : test
 ```
+Curl:
+
 curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' -d 
 { 
    "$class": "org.hyperledger.composer.RegisterRe", 
@@ -18,6 +21,8 @@ curl -X POST --header 'Content-Type: application/json' --header 'Accept: applica
 ## 1.2添加信息
 
 ```
+Curl:
+
 curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' -d 
 { 
    "$class": "org.hyperledger.composer.Resource", 
@@ -39,6 +44,8 @@ curl -X POST --header 'Content-Type: application/json' --header 'Accept: applica
 ## 1.3更新信息
 
 ```
+Curl:
+
 curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' -d 
 { 
    "$class": "org.hyperledger.composer.UpdateResource", 
@@ -64,12 +71,16 @@ curl -X POST --header 'Content-Type: application/json' --header 'Accept: applica
 ## 1.4删除信息
 
 ```
+Curl:
+
 curl -X DELETE --header 'Accept: application/json' 
 'http://localhost:3000/api/Resource/string'
 ```
 ## 1.5查询信息
 
 ```
+Curl:
+
 curl -X GET --header 'Accept: application/json' 
 'http://localhost:3000/api/queries/selectResource'
 ```
