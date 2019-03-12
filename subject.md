@@ -91,13 +91,46 @@ POST Jason Parameters：
  ## 1.5查询信息
 
 
- 使用Query进行查询，请求url为
+ 使用Query进行查询，请求url selectMembers
    ```
    Curl:
    
  curl -X GET --header 'Accept: application/json
    
  'http://localhost:3000/api/queries/selectMembers'
+ 
+ GET Response（按照email升序排列）：
+[
+  {
+    "$class": "org.hyperledger.composer.Member",
+    "email": "11",
+    "password": "11"
+  },
+  {
+    "$class": "org.hyperledger.composer.Member",
+    "email": "111",
+    "password": "111",
+    "Fingerprint": "string",
+    "Iris": "string"
+  },
+  {
+    "$class": "org.hyperledger.composer.Member",
+    "email": "14",
+    "password": "312",
+    "qq": "312",
+    "identityCard": "321",
+    "username": "321",
+    "buyerType": "321",
+    "Fingerprint": "321",
+    "Iris": "231",
+    "age": "312",
+    "sexual": "321",
+    "educationLevel": "321",
+    "address": "321",
+    "disputeRecord": "213",
+    "authorized": []
+  }
+]
    ```
 
 # 机构用户
@@ -156,6 +189,7 @@ POST Jason Parameters：
  
 ## 2.3更改信息
   ```
+  使用query，请求url 
   Curl:
   
 curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' -d 
@@ -201,9 +235,66 @@ curl -X DELETE --header 'Accept: application/json'
   
 ## 2.6查询信息
   ```
+  使用query，请求url selectSellers
+  
   Curl:
 curl -X GET --header 'Accept: application/json' 
 
 'http://localhost:3000/api/queries/selectSellers'
+
+GET Response（按照registrationNumber升序排列）：
+
+[
+  {
+    "$class": "org.hyperledger.composer.Seller",
+    "registrationNumber": "111",
+    "password": "3er",
+    "username": "12144",
+    "address": "ret",
+    "bussinessScope": "rt",
+    "yycode": "tyur",
+    "legalRepresentative": "ry",
+    "bankAddress": "ry",
+    "type": "ry",
+    "time": "64",
+    "bussinessTerm": "64",
+    "userType": "456",
+    "email": "64",
+    "qq": "46",
+    "identityCard": "45",
+    "representativeName": "46",
+    "Fingerprint": "64",
+    "Iris": "46",
+    "age": "46",
+    "sexual": "64",
+    "educationLevel": "6",
+    "authorized": []
+  },
+  {
+    "$class": "org.hyperledger.composer.Seller",
+    "registrationNumber": "1111",
+    "password": "gh",
+    "username": "fd",
+    "address": "jhgk",
+    "bussinessScope": "kj",
+    "yycode": "hkj",
+    "legalRepresentative": "hjk",
+    "bankAddress": "hjk",
+    "type": "hjk",
+    "time": "hjk",
+    "bussinessTerm": "jhk",
+    "userType": "hjk",
+    "email": "kjh",
+    "qq": "jkh",
+    "identityCard": "jhk",
+    "representativeName": "hjk",
+    "Fingerprint": "jhk",
+    "Iris": "kjh",
+    "age": "khj",
+    "sexual": "hk",
+    "educationLevel": "jkh",
+    "authorized": []
+  }
+ ]
   ```
 
