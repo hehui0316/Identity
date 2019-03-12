@@ -66,7 +66,8 @@ POST Jason Parameters：
  输入删除用户email
   ## 1.3更改信息
   ```
- curl -X DELETE --header 'Accept: application/json' 'http://localhost:3000/api/Member/string'
+ curl -X DELETE --header 'Accept: application/json' 
+ 'http://localhost:3000/api/Member/string'
   ```
  
  ## 1.5查询信息
@@ -74,7 +75,8 @@ POST Jason Parameters：
 
  使用Query进行查询，请求url为
    ```
- curl -X GET --header 'Accept: application/json' 'http://localhost:3000/api/queries/selectMembers'
+ curl -X GET --header 'Accept: application/json' 
+ 'http://localhost:3000/api/queries/selectMembers'
   ```
 # Seller
 # 机构用户
@@ -88,7 +90,8 @@ curl -X POST --header 'Content-Type: application/json' --header 'Accept: applica
    "Iris": "string", \ 
    "transactionId": "", \ 
    "timestamp": "2019-03-12T06:45:49.852Z" \ 
- }' 'http://localhost:3000/api/RegisterS'
+ }' 
+ 'http://localhost:3000/api/RegisterS'
   ```
 
 ## 2.2添加信息
@@ -150,11 +153,13 @@ curl -X POST --header 'Content-Type: application/json' --header 'Accept: applica
  
 ## 2.5删除信息
   ```
-curl -X DELETE --header 'Accept: application/json' 'http://localhost:3000/api/Seller/string'
+curl -X DELETE --header 'Accept: application/json' 
+'http://localhost:3000/api/Seller/string'
   ```
   
 ## 2.6查询信息
   ```
-curl -X GET --header 'Accept: application/json' 'http://localhost:3000/api/queries/selectSellers'
+curl -X GET --header 'Accept: application/json' 
+'http://localhost:3000/api/queries/selectSellers'
   ```
 
