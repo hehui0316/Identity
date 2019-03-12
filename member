@@ -2,14 +2,18 @@
 自然人用户
 1.1注册
 用户标识符 email:test@qq.com
-curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' -d '{ \ 
-   "$class": "org.hyperledger.composer.RegisterM", \ 
-   "email": "string", \ 
-   "password": "string", \ 
-   "Fingerprint": "string", \ 
-   "Iris": "string", \ 
-   "transactionId": "" \ 
- }' 
+Curl:
+curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' -d '
+
+POST Jason Parameters：
+{ 
+   "$class": "org.hyperledger.composer.RegisterM", 
+   "email": "string", 
+   "password": "string", 
+   "Fingerprint": "string", 
+   "Iris": "string", 
+  
+ }
  
  'http://localhost:3000/api/RegisterM'
  
