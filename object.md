@@ -5,6 +5,8 @@
 Curl:
 
 curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' -d 
+
+POST  Parameters：
 { 
    "$class": "org.hyperledger.composer.RegisterRe", 
    "productName": "string", 
@@ -24,6 +26,9 @@ curl -X POST --header 'Content-Type: application/json' --header 'Accept: applica
 Curl:
 
 curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' -d 
+
+POST  Parameters：
+
 { 
    "$class": "org.hyperledger.composer.Resource", 
    "productName": "string", 
@@ -48,6 +53,9 @@ curl -X POST --header 'Content-Type: application/json' --header 'Accept: applica
 Curl:
 
 curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' -d 
+
+POST  Parameters：
+
 { 
    "$class": "org.hyperledger.composer.UpdateResource", 
    "productName": "string", 
@@ -70,6 +78,7 @@ curl -X POST --header 'Content-Type: application/json' --header 'Accept: applica
 ```
 
 ## 1.4删除信息
+输入产品名，删除客体账户
 
 ```
 Curl:
@@ -79,6 +88,8 @@ curl -X DELETE --header 'Accept: application/json'
 'http://localhost:3000/api/Resource/string'
 ```
 ## 1.5查询信息
+使用query，请求url selectResource
+GET Response:
 
 ```
 Curl:
