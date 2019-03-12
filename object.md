@@ -38,6 +38,7 @@ curl -X POST --header 'Content-Type: application/json' --header 'Accept: applica
    "transactionId": "string", 
    "authorized": [] 
  }' 
+ 
  'http://localhost:3000/api/Resource'
 ```
 
@@ -74,6 +75,7 @@ curl -X POST --header 'Content-Type: application/json' --header 'Accept: applica
 Curl:
 
 curl -X DELETE --header 'Accept: application/json' 
+
 'http://localhost:3000/api/Resource/string'
 ```
 ## 1.5查询信息
@@ -82,5 +84,6 @@ curl -X DELETE --header 'Accept: application/json'
 Curl:
 
 curl -X GET --header 'Accept: application/json' 
+
 'http://localhost:3000/api/queries/selectResource'
 ```
