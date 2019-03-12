@@ -1,5 +1,4 @@
-# 主体
-## 自然人用户
+# 自然人用户
 ## 1.1注册
 用户标识符 email:test@qq.com
 ```
@@ -78,7 +77,7 @@ POST Jason Parameters：
  curl -X GET --header 'Accept: application/json' 
  'http://localhost:3000/api/queries/selectMembers'
   ```
-# Seller
+
 # 机构用户
 ## 2.1注册
   ```
