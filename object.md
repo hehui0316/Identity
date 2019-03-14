@@ -33,11 +33,11 @@ POST  Parameters：
    "$class": "org.hyperledger.composer.Resource", 
    "productName": "string", //产品名
    "descriptions": "string",  //描述信息
-   "format": "string",  //
+   "format": "string",  //格式
    "copyright": "string", //版权
-   "keyword": "string", 
-   "contentType": "string", 
-   "values": "string", 
+   "keyword": "string",  //关键字
+   "contentType": "string",//内容类型
+   "values": "string", 　、、资源价值
    "size": "string",  //文件大小
    "provider": "string", //提供者
    "transactionId": "string", 
@@ -57,17 +57,17 @@ curl -X POST --header 'Content-Type: application/json' --header 'Accept: applica
 POST  Parameters：
 
 { 
-   "$class": "org.hyperledger.composer.UpdateResource", 
-   "productName": "string", 
-   "password": "string",
-   "descriptions": "string", 
-   "format": "string", 
-   "copyright": "string", 
-   "keyword": "string", 
-   "contentType": "string", 
-   "values": "string", 
-   "size": "string", 
-   "provider": "string", 
+   "$class": "org.hyperledger.composer.UpdateResource",
+   "productName": "string", //产品名
+   "password": "string",　//密码
+   "descriptions": "string",　 //描述信息
+   "format": "string",  //格式
+   "copyright": "string", //版权
+   "keyword": "string",  //关键字
+   "contentType": "string",//内容类型
+   "values": "string", 　、、资源价值
+   "size": "string",  //文件大小
+   "provider": "string", //提供者
    "transactionId": "string", 
    "authorized": [] 
    "transactionId": "", 
