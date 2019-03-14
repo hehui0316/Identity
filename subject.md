@@ -163,24 +163,23 @@ curl -X POST --header 'Content-Type: application/json' --header 'Accept: applica
 POST Jason Parameters：
 { 
    "$class": "org.hyperledger.composer.Seller",
-   "registrationNumber": "string1", 
-   "username": "string", 
-   "address": "string", 
-   "bussinessScope": "string",  
-   "yycode": "string",  
-   "legalRepresentative": "string", 
-   "bankAddress": "string",  
-   "type": "string",  
-   "time": "string",  
-   "bussinessTerm": "string",  
-   "userType": "string",  
-   "email": "string",  
-   "qq": "string", 
-   "identityCard": "string", 
-   "representativeName": "string", 
-   "age": "string", 
-   "sexual": "string",  
-   "educationLevel": "string", 
+   "registrationNumber": "string1", //机构名称
+   "address": "string", //机构地址
+   "bussinessScope": "string",  //机构经营范围
+   "yycode": "string",  //机构统一社会信用码
+   "legalRepresentative": "string", //机构法定代表人
+   "bankAddress": "string",  //机构地址
+   "type": "string",  //机构类型
+   "time": "string",  //机构开户时间
+   "bussinessTerm": "string",  //机构营业期限
+   "userType": "string",  //用户类型
+   "email": "string",  //机构法定代表邮箱
+   "qq": "string",  //QQ
+   "identityCard": "string", //机构法定代表身份证号码
+   "representativeName": "string", //机构法定代表姓名
+   "age": "string", //机构法定代表年龄
+   "sexual": "string",  //机构法定代表性别
+   "educationLevel": "string", //机构法定代表受教育水平
    "authorized": [] 
  }'
  
@@ -197,27 +196,26 @@ curl -X POST --header 'Content-Type: application/json' --header 'Accept: applica
 POST Jason Parameters：
 { 
    "$class": "org.hyperledger.composer.UpdateSeller", 
-    "registrationNumber": "string1", 
-   "password": "string", 
-   "username": "string", 
-   "address": "string",  
-   "bussinessScope": "string",  
-   "yycode": "string", 
-   "legalRepresentative": "string", 
-   "bankAddress": "string",  
-   "type": "string", 
-   "time": "string",  
-   "bussinessTerm": "string",  
-   "userType": "string", 
-   "email": "string", 
-   "qq": "string", 
-   "identityCard": "string",  
-   "representativeName": "string",  
-   "Fingerprint": "string",  
-   "Iris": "string", 
-   "age": "string", 
-   "sexual": "string", 
-   "educationLevel": "string", 
+   "registrationNumber": "string1", //机构名称
+   "password": "string",  //密码
+   "address": "string", //机构地址
+   "bussinessScope": "string",  //机构经营范围
+   "yycode": "string",  //机构统一社会信用码
+   "legalRepresentative": "string", //机构法定代表人
+   "bankAddress": "string",  //机构地址
+   "type": "string",  //机构类型
+   "time": "string",  //机构开户时间
+   "bussinessTerm": "string",  //机构营业期限
+   "userType": "string",  //用户类型
+   "email": "string",  //机构法定代表邮箱
+   "qq": "string",  //QQ
+   "identityCard": "string", //机构法定代表身份证号码
+   "representativeName": "string", //机构法定代表姓名 
+   "Fingerprint": "string",  //指纹
+   "Iris": "string", //虹膜
+   "age": "string", //机构法定代表年龄
+   "sexual": "string",  //机构法定代表性别
+   "educationLevel": "string", //机构法定代表受教育水平
    "authorized": [] 
  }'
  
