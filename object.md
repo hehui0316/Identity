@@ -9,8 +9,8 @@ curl -X POST --header 'Content-Type: application/json' --header 'Accept: applica
 POST  Parameters：
 { 
    "$class": "org.hyperledger.composer.RegisterRe", 
-   "productName": "string", 
-   "password": "string",
+   "productName": "string",  //产品名
+   "password": "string", //密码
    "transactionId": "", 
    "timestamp": "2019-03-12T08:06:49.243Z" 
  }
@@ -31,15 +31,15 @@ POST  Parameters：
 
 { 
    "$class": "org.hyperledger.composer.Resource", 
-   "productName": "string", 
-   "descriptions": "string", 
-   "format": "string", 
-   "copyright": "string", 
-   "keyword": "string",
+   "productName": "string", //产品名
+   "descriptions": "string",  //描述信息
+   "format": "string",  //
+   "copyright": "string", //版权
+   "keyword": "string", 
    "contentType": "string", 
    "values": "string", 
-   "size": "string", 
-   "provider": "string", 
+   "size": "string",  //文件大小
+   "provider": "string", //提供者
    "transactionId": "string", 
    "authorized": [] 
  }' 
