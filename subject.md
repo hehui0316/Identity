@@ -143,10 +143,10 @@ curl -X POST --header 'Content-Type: application/json' --header 'Accept: applica
 POST Jason Parameters：
 { 
    "$class": "org.hyperledger.composer.RegisterS", 
-   "registrationNumber": "string",  
-   "password": "string",
-   "Fingerprint": "string", 
-   "Iris": "string", 
+   "registrationNumber": "string",  //注册机构号
+   "password": "string", //密码
+   "Fingerprint": "string", //指纹
+   "Iris": "string", //虹膜
    "transactionId": "", 
    "timestamp": "2019-03-12T06:45:49.852Z" 
  }
