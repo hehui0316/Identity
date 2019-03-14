@@ -10,10 +10,10 @@ POST Jason Parameters：
 
 { 
    "$class": "org.hyperledger.composer.RegisterM", 
-   "email": "string", 
-   "password": "string", 
-   "Fingerprint": "string", 
-   "Iris": "string", 
+   "email": "string", //邮箱
+   "password": "string", //密码
+   "Fingerprint": "string", //指纹
+   "Iris": "string", //虹膜
   
  }
  
@@ -31,15 +31,14 @@ POST Jason Parameters：
  
  { 
    "$class": "org.hyperledger.composer.Member", 
-   "email": "string",
-   "qq": "string", 
-   "identityCard": "string", 
-   "username": "string",  
-   "buyerType": "string", 
-   "age": "string", 
-   "sexual": "string", 
-   "educationLevel": "string",  
-   "address": "string",  
+   "email": "string", //邮箱
+   "qq": "string", //QQ
+   "identityCard": "string", //身份证号码
+   "buyerType": "string",  //用户类型
+   "age": "string", //年龄
+   "sexual": "string",  //性别
+   "educationLevel": "string",  //教育水平
+   "address": "string",  //地址
    "disputeRecord": "string",  
    "authorized": [] 
  }
@@ -57,18 +56,17 @@ POST Jason Parameters：
  POST Jason Parameters：
  { 
    "$class": "org.hyperledger.composer.Update", 
-   "email": "string", 
-   "password": "string", 
-   "qq": "string", 
-   "identityCard": "string",  
-   "username": "string",
-   "buyerType": "string",  
-   "Fingerprint": "string",  
-   "Iris": "string",  
-   "age": "string",  
-   "sexual": "string",  
-   "educationLevel": "string", 
-   "address": "string",  
+   "email": "string", //邮箱
+   "password": "string", //密码
+   "qq": "string", //QQ
+   "identityCard": "string", //身份证号码
+   "buyerType": "string",  //用户类型
+   "Fingerprint": "string",  //指纹
+   "Iris": "string",  //虹膜
+   "age": "string",  //年龄
+   "sexual": "string",  //性别
+   "educationLevel": "string", //教育水平
+   "address": "string",  //地址
    "disputeRecord": "string", 
    "authorized": []
  }
@@ -119,7 +117,6 @@ POST Jason Parameters：
     "password": "312",
     "qq": "312",
     "identityCard": "321",
-    "username": "321",
     "buyerType": "321",
     "Fingerprint": "321",
     "Iris": "231",
@@ -247,7 +244,6 @@ GET Response（按照registrationNumber升序排列）：
     "$class": "org.hyperledger.composer.Seller",
     "registrationNumber": "111",
     "password": "3er",
-    "username": "12144",
     "address": "ret",
     "bussinessScope": "rt",
     "yycode": "tyur",
@@ -272,7 +268,6 @@ GET Response（按照registrationNumber升序排列）：
     "$class": "org.hyperledger.composer.Seller",
     "registrationNumber": "1111",
     "password": "gh",
-    "username": "fd",
     "address": "jhgk",
     "bussinessScope": "kj",
     "yycode": "hkj",
