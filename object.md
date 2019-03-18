@@ -10,7 +10,6 @@ POST  Parameters：
 { 
    "$class": "org.hyperledger.composer.RegisterRe", 
    "productName": "string",  //产品名
-   "password": "string", //密码
    "transactionId": "", 
    "timestamp": "2019-03-12T08:06:49.243Z" 
  }
@@ -59,7 +58,6 @@ POST  Parameters：
 { 
    "$class": "org.hyperledger.composer.UpdateResource",
    "productName": "string", //产品名
-   "password": "string",　//密码
    "descriptions": "string",　 //描述信息
    "format": "string",  //格式
    "copyright": "string", //版权
@@ -104,7 +102,6 @@ GET Response:按照productName升序排列
   {
     "$class": "org.hyperledger.composer.Resource",
     "productName": "123",
-    "password": "231",
     "descriptions": "312",
     "format": "45",
     "copyright": "4",
@@ -118,12 +115,10 @@ GET Response:按照productName升序排列
   {
     "$class": "org.hyperledger.composer.Resource",
     "productName": "1234",
-    "password": "1234"
   },
   {
     "$class": "org.hyperledger.composer.Resource",
     "productName": "7562",
-    "password": "",
     "descriptions": "",
     "format": "",
     "copyright": "",
