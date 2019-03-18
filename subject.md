@@ -14,7 +14,9 @@ POST Jason Parameters：
    "password": "string", //密码
    "Fingerprint": "string", //指纹
    "Iris": "string", //虹膜
-  
+   "transactionId": "", 
+   "timestamp": "2019-03-12T06:45:49.852Z" 
+ 
  }
  
  'http://localhost:3000/api/RegisterM'
