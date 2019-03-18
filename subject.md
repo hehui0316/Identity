@@ -41,7 +41,6 @@ POST Jason Parameters：
    "sexual": "string",  //性别
    "educationLevel": "string",  //教育水平
    "address": "string",  //地址
-   "disputeRecord": "string",  
    "authorized": [] 
  }
  
@@ -69,7 +68,6 @@ POST Jason Parameters：
    "sexual": "string",  //性别
    "educationLevel": "string", //教育水平
    "address": "string",  //地址
-   "disputeRecord": "string", 
    "transactionId": "", 
    "timestamp": "2019-03-12T08:06:49.421Z" 
  }
@@ -127,7 +125,6 @@ POST Jason Parameters：
     "sexual": "321",
     "educationLevel": "321",
     "address": "321",
-    "disputeRecord": "213",
     "authorized": []
   }
 ]
