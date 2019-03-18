@@ -70,7 +70,8 @@ POST Jason Parameters：
    "educationLevel": "string", //教育水平
    "address": "string",  //地址
    "disputeRecord": "string", 
-   "authorized": []
+   "transactionId": "", 
+   "timestamp": "2019-03-12T08:06:49.421Z" 
  }
  
  'http://localhost:3000/api/Update'
@@ -215,7 +216,8 @@ POST Jason Parameters：
    "age": "string", //机构法定代表年龄
    "sexual": "string",  //机构法定代表性别
    "educationLevel": "string", //机构法定代表受教育水平
-   "authorized": [] 
+   "transactionId": "", 
+   "timestamp": "2019-03-12T08:06:49.421Z" 
  }'
  
  'http://localhost:3000/api/UpdateSeller'
